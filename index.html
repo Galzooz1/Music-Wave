@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="burger.css">
+    <title>Music Wave</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="lodash.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="music_js/appMusic.js"></script>
+    <script src="music_js/classMusic.js"></script>
+    <script src="music_js/managerMusic.js"></script>
+    <script src="music_js/eventsMusic.js"></script>
+    <script src="music_js/darkMusic.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark p-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="logo">
+                <a href="index.html" class="d-flex text-decoration-none">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_0N5PPb.json" background="transparent" speed="1" style="width: 75px; height: 50px;" loop autoplay></lottie-player>
+                    <h1 class="text-info">MUSIC<span class="text-primary">WAVE</span></h1>
+                </a>
+            </div>
+            <nav class="text-primary d-md-flex" id="id_nav_burger">
+                <a href="#main">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div id="id_burger" class="burger d-md-none text-right text-white">
+                <i class="h3 fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="strip">
+        <div class="black_overlay">
+            <h2 class="headline text-center my-5">Search for a song,<br>and get on the waves</h2>
+            <!-- <div class="center"> -->
+            <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xzZ785.json" background="transparent" speed="0.5" style="width: 150px; height: 150px; margin:0 0 0px 20px;" loop autoplay></lottie-player> -->
+            <!-- <lottie-player class="loti" src="https://assets8.lottiefiles.com/private_files/lf30_jd0jofmx.json" speed="1" style="width: 100px; height: 100px; border-radius: 50%;" loop autoplay></lottie-player> -->
+            <!-- </div> -->
+            <div class="row">
+                <div class="top col-lg-2 col-md-5">
+                    <h2 class="display-6 text-info"><span class="paddhere">Music<span class="text-primary">Wave</span></span><br><span class="text-white display-4 fw-normal">Top 5<br></span> <span class="text-warning display-4">Israeli</span></h2>
+                    <hr class="bg-white">
+                    <a data-artist="Atar Mayner" href="#main">Atar Mayner</a>
+                    <hr class="bg-white">
+                    <a data-artist="Hadag Nahash" href="#main">Hadag Nahash</a>
+                    <hr class="bg-white">
+                    <a data-artist="Ravid Plotnik" href="#main">Ravid Plotnik</a>
+                    <hr class="bg-white">
+                    <a data-artist="Eviatar Banai" href="#main">Eviatar Banai</a>
+                    <hr class="bg-white">
+                    <a data-artist="Yoni Bloch" href="#main" class="last">Yoni Bloch</a>
+                </div>
+                <div class="top col-lg-2 col-md-5">
+                    <h2 class="display-6 text-info"><span class="paddhere">Music<span class="text-primary">Wave</span></span><br><span class="text-white display-4 fw-normal">Top 5</span><br> <span class="text-danger display-4">Bands</span></h2>
+                    <hr class="bg-white">
+                    <a data-artist="Arctic Monkeys" href="#main">Arctic Monkeys</a>
+                    <hr class="bg-white">
+                    <a data-artist="Gorillaz" href="#main">Gorillaz</a>
+                    <hr class="bg-white">
+                    <a data-artist="KALEO" href="#main">KALEO</a>
+                    <hr class="bg-white">
+                    <a data-artist="Black Eyed Peas" href="#main">Black Eyed Peas</a>
+                    <hr class="bg-white">
+                    <a data-artist="Twenty One Pilots" href="#main" class="last">Twenty One Pilots</a>
+                </div>
+                <div class="top col-lg-2 col-md-5">
+                    <h2 class="display-6 text-info"><span class="paddhere">Music<span class="text-primary">Wave</span></span><br><span class="text-white display-4 fw-normal">Top 5</span><br> <span class="text-success display-4">Rappers</span></h2>
+                    <hr class="bg-white">
+                    <a data-artist="Mac Miller" href="#main">Mac Miller</a>
+                    <hr class="bg-white">
+                    <a data-artist="Lil Peep" href="#main">Lil Peep</a>
+                    <hr class="bg-white">
+                    <a data-artist="J Cole" href="#main">J Cole</a>
+                    <hr class="bg-white">
+                    <a data-artist="Eminem" href="#main">Eminem</a>
+                    <hr class="bg-white">
+                    <a data-artist="Lil Dicky" href="#main" class="last">Lil Dicky</a>
+                </div>
+                <div class="top col-lg-2 col-md-5">
+                    <h2 class="display-6 text-info"><span class="paddhere">Music<span class="text-primary">Wave</span></span><br><span class="text-white display-4 fw-normal">Top 5</span><br> <span class="text-info display-4">R&B</span></h2>
+                    <hr class="bg-white">
+                    <a data-artist="Tyler the Creator" href="#main">Tyler the Creator</a>
+                    <hr class="bg-white">
+                    <a data-artist="Pink Sweats" href="#main">Pink Sweat$</a>
+                    <hr class="bg-white">
+                    <a data-artist="Two Feet" href="#main">Two Feet</a>
+                    <hr class="bg-white">
+                    <a data-artist="Asaf Avidan" href="#main">Asaf Avidan</a>
+                    <hr class="bg-white">
+                    <a data-artist="Glass Animals" href="#main" class="last">Glass Animals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="d-flex pt-5" id="main">
+        <aside class="text-center text-white col-lg-2">
+            <div class="center justify-content-end">
+
+                <lottie-player src="https://assets8.lottiefiles.com/datafiles/ovL488ma5whkm8k/data.json" background="transparent" speed="1" style="width: 175px; height: 175px;" loop autoplay></lottie-player>
+            </div>
+            <div class="center justify-content-end">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_VE06RZ.json" background="transparent" speed="1" style="width: 175px; height: 175px;" loop autoplay></lottie-player>
+            </div>
+        </aside>
+        <div class="container col-lg-7 col-md-12">
+            <div class="search_bar">
+                <div class="search d-flex col-lg-6 col-md-7 m-1">
+                    <input type="text" id="id_search" class="form-control" placeholder="Search for any artist or song">
+                    <button class="btn btn-primary" id="id_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+                <div class="sort col-6">
+                    <select class="select form-select border me-2" id="id_select">
+                        <option value="">Sort By...</option>
+                        <option value="title">Name</option>
+                        <option value="album.cover">Album</option>
+                        <option value="duration">Duration</option>
+                        <option value="rank">Rank</option>
+                    </select>
+                    <button class="reverse mx-1 p-2 btn text-white" id="id_rev">Reverse</button>
+                    <button class="shuffle mx-1 p-2 btn btn-secondary" id="id_shuf">Shuffle</button>
+                </div>
+            </div>
+            <div class="title">
+                <hr>
+                <div class="menu">
+                    <div class="box box1">Artist</div>
+                    <div class="box box2">Song</div>
+                    <div class="box box3">Album</div>
+                    <div class="box box4">Duration</div>
+                    <div class="box box5">Rank</div>
+                </div>
+                <hr>
+            </div>
+            <div class="songs pb-5" id="id_songs">
+            </div>
+        </div>
+        <aside class="text-center text-white col-lg-2">
+            <div class="center justify-content-start">
+
+                <lottie-player src="https://assets8.lottiefiles.com/datafiles/ovL488ma5whkm8k/data.json" background="transparent" speed="1" style="width: 175px; height: 175px;" loop autoplay></lottie-player>
+            </div>
+            <div class="center justify-content-start">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_VE06RZ.json" background="transparent" speed="1" style="width: 175px; height: 175px;" loop autoplay></lottie-player>
+            </div>
+        </aside>
+    </main>
+    <div class="about pt-5" id="about">
+        <div class="container">
+            <div class="who text-center">
+                <h2 class="text-center py-3 text-decoration-underline">About Us</h2>
+
+                <span class="text-info text-decoration-underline">Music</span><span class="text-primary text-decoration-underline">Wave</span> was founded in January 2021 after the horrible 2020.<br> Our goal is to make people happy.<br>We know that there's
+                absolutly no better way to do that than music.<br><br> We want to expose people to new vibezZzZ of music.
+                <div class="center">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_b20u0axq.json" background="transparent" speed="1.3" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+                </div>
+                So. would you ride on that road with us?
+                <br><br>
+                <div class="center one">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=galzooz1@gmail.com" target="_blank">
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_q8ldfyrr.json" background="transparent" speed="0.7" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="between d-flex justify-content-end pe-5 pb-3" style="background: black;">
+        <a href="#">
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_fZUsaS.json" background="transparent" speed="1.5" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+        </a>
+    </div>
+    <footer id="contact">
+        <div class="container">
+            <div class="loggo d-flex justify-content-center align-items-center">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_0N5PPb.json" background="transparent" speed="1" style="width: 75px; height: 50px;" loop autoplay></lottie-player>
+                <h1 class="text-info">MUSIC<span class="text-primary">WAVE</span></h1>
+            </div>
+            <br>
+            <h4 class="text-center text-white fw-light">Send us a message via:</h4>
+            <div class="items">
+                <a href="https://www.facebook.com/gal.aluf.1/" target="_blank">
+
+                    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_pb3we3yk.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></lottie-player>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=galzooz1@gmail.com" target="_blank">
+
+                    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_29gwi53x.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></lottie-player>
+                </a>
+                <a href="https://msng.link/o/?972502335688=wa" target="_blank">
+
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_W6nHGZ/Whats app.json" background="transparent" speed="0.7" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                </a>
+                <a href="https://msng.link/o/?gal.aluf.1=fm" target="_blank">
+
+                    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_d9lonffd.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></lottie-player>
+                </a>
+                <a href="https://msng.link/o/?gal_aluf=ig" target="_blank">
+
+                    <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_f5ytlpiy.json" background="transparent" speed="1" style="width: 100px; height: 100px;" autoplay></lottie-player>
+                </a>
+            </div>
+            <div class="row justify-content-center fw-bolder text-white">
+                Created By Gal Aluf &copy;
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
